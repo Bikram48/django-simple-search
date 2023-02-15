@@ -1,4 +1,10 @@
-<form>
-    <input type="text" placeholder="search here.."/>
+<form action="" method="GET">
+    <input type="text" placeholder="search here.." name="q"/>
     <input type="submit" />
 </form>
+
+{% if object %}
+<h1>{{object.title}}</h1>
+<i>{{object.author}}</i>
+<p>{{object.content}}</p>
+{% endif %}
